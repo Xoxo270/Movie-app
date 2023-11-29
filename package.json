@@ -1,0 +1,22 @@
+{
+  "name": "movie-database",
+  "version": "1.0.0",
+  "description": "A simple application that let you get informations for a movie or a categorie of your choice from an API.",
+  "scripts": {
+    "start": "http-server -p 9000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xoxo270/Movie-app.git"
+  },
+  "author": "Daoulas Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xoxo270/Movie-app/issues"
+  },
+  "homepage": "https://github.com/Xoxo270/Movie-app#readme",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

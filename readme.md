@@ -1,4 +1,4 @@
-# Movie Application
+# Movie Database
 
 A simple application that let you get informations for a movie or a categorie of your choice from an API.
 
