@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Xoxo270/Movie-app.git"
+    "url": "git+https://github.com/Xoxo270/Movie-database.git"
   },
   "author": "Daoulas Thomas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Xoxo270/Movie-app/issues"
+    "url": "https://github.com/Xoxo270/Movie-database/issues"
   },
-  "homepage": "https://github.com/Xoxo270/Movie-app#readme",
+  "homepage": "https://github.com/Xoxo270/Movie-database#readme",
   "dependencies": {
     "http-server": "^14.1.1"
   }
