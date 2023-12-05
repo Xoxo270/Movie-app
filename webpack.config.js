@@ -1,18 +1,21 @@
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
 
+// const dotenv = require("dotenv").config();
+const Dotenv = require("dotenv-webpack");
 const path = require("path");
 var webpack = require("webpack");
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const isProduction = process.env.NODE_ENV == "production";
+// const isProduction = process.env.NODE_ENV == "production";
 
 const stylesHandler = isProduction
   ? MiniCssExtractPlugin.loader
   : "style-loader";
 
 const config = {
+  mode: "development",
   entry: "./src/app.js",
   output: {
     filename: "main.js",
@@ -26,12 +29,13 @@ const config = {
     new HtmlWebpackPlugin({
       template: "index.html",
     }),
+    new NodePolyfillPlugin(),
     new webpack.DefinePlugin({
       "process.env": {
         API_KEY: JSON.stringify(process.env.API_KEY),
       },
     }),
-    new NodePolyfillPlugin(),
+    new Dotenv(),
 
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/

@@ -1,7 +1,7 @@
-import _ from "lodash";
 import "dotenv/config";
 
 const API_KEY = process.env.API_KEY;
+console.log(API_KEY);
 ///////////////////////////////////////////////////////////////////////////////////////////
 // Selectors
 let movies = document.getElementById("movieList");
